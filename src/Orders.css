@@ -1,0 +1,82 @@
+.orders-container {
+  padding: 20px;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+.orders-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* GRID */
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.order-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+/* HEADER */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.order-header h3 {
+  margin: 0;
+  color: #222;
+}
+
+/* STATUS BADGES */
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.status.pending {
+  background: orange;
+}
+
+.status.completed {
+  background: green;
+}
+
+.status.cancelled {
+  background: red;
+}
+
+/* BODY */
+.order-body p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* FOOTER */
+.order-footer {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #888;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
